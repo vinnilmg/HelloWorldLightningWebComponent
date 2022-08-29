@@ -14,10 +14,17 @@
         <members>ParkServiceMock</members>
         <members>ParkService</members>
         <members>AsyncParkService</members>
-        <members>AccountUtility</members>-->
+        <members>AccountUtility</members>
         <members>PropertyUtility</members>
+        <members>OrderItemUtility</members>-->
+        <members>AccountService</members>
+        <members>AccountServiceTest</members>
         <name>ApexClass</name>
     </types>
+    <!--<types>
+        <members>orderTrigger</members>
+        <name>ApexTrigger</name>
+    </types>-->
     <!--<types>
         <members>helloWorld</members>
         <name>LightningComponentBundle</name>
