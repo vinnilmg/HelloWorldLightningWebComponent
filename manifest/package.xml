@@ -16,15 +16,20 @@
         <members>AsyncParkService</members>
         <members>AccountUtility</members>
         <members>PropertyUtility</members>
-        <members>OrderItemUtility</members>-->
+        <members>OrderItemUtility</members>-
         <members>AccountService</members>
-        <members>AccountServiceTest</members>
+        <members>AccountServiceTest</members> -->
+        <members>CriaEventoCloudNews</members>
+        <members>EventoCloudNewsTest</members>
+        <members>CriaOrderEvent</members>
         <name>ApexClass</name>
     </types>
-    <!--<types>
-        <members>orderTrigger</members>
+    <types>
+        <!--<members>orderTrigger</members>-->
+        <members>CloudNewsTrigger</members>
+        <members>OrderEventTrigger</members>
         <name>ApexTrigger</name>
-    </types>-->
+    </types>
     <!--<types>
         <members>helloWorld</members>
         <name>LightningComponentBundle</name>
