@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
-        <!--<members>AccountProcessor</members>
+    <!--<types>
+        <members>AccountProcessor</members>
         <members>AccountProcessorTest</members>
         <members>LeadProcessor</members>
         <members>LeadProcessorTest</members> 
@@ -18,18 +18,18 @@
         <members>PropertyUtility</members>
         <members>OrderItemUtility</members>-
         <members>AccountService</members>
-        <members>AccountServiceTest</members> -->
+        <members>AccountServiceTest</members> 
         <members>CriaEventoCloudNews</members>
         <members>EventoCloudNewsTest</members>
         <members>CriaOrderEvent</members>
         <name>ApexClass</name>
-    </types>
-    <types>
-        <!--<members>orderTrigger</members>-->
+    </types>-->
+    <!--<types>
+        <members>orderTrigger</members>
         <members>CloudNewsTrigger</members>
         <members>OrderEventTrigger</members>
         <name>ApexTrigger</name>
-    </types>
+    </types>-->
     <!--<types>
         <members>helloWorld</members>
         <name>LightningComponentBundle</name>
@@ -37,6 +37,18 @@
     <!--<types>
         <members>Account</members>
         <name>CustomObject</name>
+    </types>-->
+    <!--<types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>-->
+    <!--<types>
+        <members>ContactForm</members>
+        <name>ApexPage</name>
+    </types>-->
+    <!--<types>
+        <members>Field_Sales_App</members>
+        <name>FlexiPage</name>
     </types>-->
     <version>53.0</version>
 </Package>

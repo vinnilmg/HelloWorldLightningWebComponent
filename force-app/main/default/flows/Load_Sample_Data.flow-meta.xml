@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Testing</description>
+        <name>Not_sure_what_to_put_here</name>
+        <label>Not sure what to put here</label>
+        <locationX>178</locationX>
+        <locationY>49</locationY>
+        <actionName>bot_DataController</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>Load Sample Data {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Load Sample Data</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>Not_sure_what_to_put_here</startElementReference>
+    <status>Active</status>
+</Flow>
