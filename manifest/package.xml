@@ -34,14 +34,29 @@
         <members>helloWorld</members>
         <name>LightningComponentBundle</name>
     </types>-->
-    <!--<types>
-        <members>Account</members>
+    <types>
+        <members>Travel_Approval__c</members>
+        <members>Department__c</members>
+        <members>Expense_Item__c</members>
         <name>CustomObject</name>
-    </types>-->
-    <!--<types>
-        <members>*</members>
+    </types>
+    <types>
+        <members>Travel_App</members>
+        <name>CustomApplication</name>
+    </types>
+        <types>
+        <members>Travel_Approval__c.Travel_Approval_Request</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>Out_of_State_Travel_Flag</members>
         <name>Flow</name>
-    </types>-->
+    </types>
+        <types>
+        <members>Travel_Requests_by_Department</members>
+        <members>Travel_Requests_by_Month</members>
+        <name>Report</name>
+    </types>
     <!--<types>
         <members>ContactForm</members>
         <name>ApexPage</name>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Indicator__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Status__c , &apos;Approved&apos;) , IMAGE(&quot;/resource/StatusImages/thumbs-up.png&quot;, &quot;Accepted&quot;, 20, 20),
+IF ( ISPICKVAL( Status__c , &apos;Rejected&apos;), IMAGE(&quot;/resource/StatusImages/thumbs-down.png&quot;, &quot;Rejected&quot;, 20, 20),
+IMAGE(&quot;/resource/StatusImages/draft.png&quot;, &quot;In-Process&quot;, 20, 20)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

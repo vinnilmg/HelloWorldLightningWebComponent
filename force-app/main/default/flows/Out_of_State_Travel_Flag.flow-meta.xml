@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Is_Travel_Out_of_State</name>
+        <label>Is Travel Out of State?</label>
+        <locationX>1088</locationX>
+        <locationY>338</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Out_of_State</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Destination_State__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>TX</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Travel_Approval_Record</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Yes Out of State</label>
+        </rules>
+        <rules>
+            <name>In_State</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Destination_State__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TX</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Travel_Approval_Record_0</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>In State</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Out of State Travel Flag {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Out of State Travel Flag</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Travel_Approval_Record</name>
+        <label>Update Travel Approval Record</label>
+        <locationX>897</locationX>
+        <locationY>511</locationY>
+        <inputAssignments>
+            <field>Out_of_State__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Travel_Approval_Record_0</name>
+        <label>Update Travel Approval Record</label>
+        <locationX>1280</locationX>
+        <locationY>510</locationY>
+        <inputAssignments>
+            <field>Out_of_State__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>970</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Is_Travel_Out_of_State</targetReference>
+        </connector>
+        <object>Travel_Approval__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
