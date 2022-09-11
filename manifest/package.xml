@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <!--<types>
-        <members>AccountProcessor</members>
+    <types>
+        <!--<members>AccountProcessor</members>
         <members>AccountProcessorTest</members>
         <members>LeadProcessor</members>
         <members>LeadProcessorTest</members> 
@@ -16,25 +16,35 @@
         <members>AsyncParkService</members>
         <members>AccountUtility</members>
         <members>PropertyUtility</members>
-        <members>OrderItemUtility</members>-
+        <members>OrderItemUtility</members>
         <members>AccountService</members>
         <members>AccountServiceTest</members> 
         <members>CriaEventoCloudNews</members>
         <members>EventoCloudNewsTest</members>
         <members>CriaOrderEvent</members>
+        <members>OlderAccountsUtility</members>-->
+        <members>MaintenanceRequestHelper</members>
+        <members>WarehouseCalloutService</members>
+        <members>WarehouseSyncSchedule</members>
+        <members>MaintenanceRequestHelperTest</members>
+        <members>criaSolicitacaoManut</members>
+        <members>WarehouseCalloutServiceTest</members>
+        <members>WarehouseCalloutServiceMock</members>
+        <members>WarehouseSyncScheduleTest</members>
         <name>ApexClass</name>
-    </types>-->
-    <!--<types>
-        <members>orderTrigger</members>
+    </types>
+    <types>
+        <!--<members>orderTrigger</members>
         <members>CloudNewsTrigger</members>
-        <members>OrderEventTrigger</members>
+        <members>OrderEventTrigger</members>-->
+        <members>MaintenanceRequestTrigger</members>
         <name>ApexTrigger</name>
-    </types>-->
+    </types>
     <!--<types>
         <members>helloWorld</members>
         <name>LightningComponentBundle</name>
     </types>-->
-    <types>
+    <!--<types>
         <members>Travel_Approval__c</members>
         <members>Department__c</members>
         <members>Expense_Item__c</members>
@@ -56,7 +66,7 @@
         <members>Travel_Requests_by_Department</members>
         <members>Travel_Requests_by_Month</members>
         <name>Report</name>
-    </types>
+    </types>-->
     <!--<types>
         <members>ContactForm</members>
         <name>ApexPage</name>
