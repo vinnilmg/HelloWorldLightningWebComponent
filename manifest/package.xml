@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
-        <!--<members>AccountProcessor</members>
+    <!--<types>
+        <members>AccountProcessor</members>
         <members>AccountProcessorTest</members>
         <members>LeadProcessor</members>
         <members>LeadProcessorTest</members> 
@@ -22,7 +22,7 @@
         <members>CriaEventoCloudNews</members>
         <members>EventoCloudNewsTest</members>
         <members>CriaOrderEvent</members>
-        <members>OlderAccountsUtility</members>-->
+        <members>OlderAccountsUtility</members>
         <members>MaintenanceRequestHelper</members>
         <members>WarehouseCalloutService</members>
         <members>WarehouseSyncSchedule</members>
@@ -32,18 +32,29 @@
         <members>WarehouseCalloutServiceMock</members>
         <members>WarehouseSyncScheduleTest</members>
         <name>ApexClass</name>
-    </types>
-    <types>
-        <!--<members>orderTrigger</members>
+    </types>-->
+    <!--<types>
+        <members>orderTrigger</members>
         <members>CloudNewsTrigger</members>
-        <members>OrderEventTrigger</members>-->
+        <members>OrderEventTrigger</members>
         <members>MaintenanceRequestTrigger</members>
         <name>ApexTrigger</name>
-    </types>
-    <!--<types>
-        <members>helloWorld</members>
-        <name>LightningComponentBundle</name>
     </types>-->
+    <types>
+        <!--<members>helloWorld</members>
+        <members>firstLWC</members>
+        <members>bikeCard</members>
+        <members>bikeChild</members>
+        <members>parentComponent</members>
+        <members>childComponent</members>-->
+        <members>list</members>
+        <members>selector</members>
+        <members>tile</members>
+        <members>detail</members>
+        <members>data</members>
+        <members>jsExample</members>
+        <name>LightningComponentBundle</name>
+    </types>
     <!--<types>
         <members>Travel_Approval__c</members>
         <members>Department__c</members>

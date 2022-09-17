@@ -1,0 +1,14 @@
+<template>
+  <lightning-input class="nomeProduto" label="Input Text" value={nomeProduto}></lightning-input>
+  <input type="button" onclick={handleClick} value="Buscar produtos" />
+
+  <h1>Produtos:</h1>
+
+  <div>
+    <template for:each={produtos} for:item="produto">
+      <p key={produto.Id}>{produto.Name}</p>
+    </template>
+  </div>
+
+
+</template>
