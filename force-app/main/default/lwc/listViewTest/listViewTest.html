@@ -1,0 +1,21 @@
+<template>
+  <template if:true={listsViews.data}>
+    <lightning-combobox name="progress" label="Modos de exibição de Produto" value={value} options={options}
+      onchange={handleChange}></lightning-combobox>
+
+    <template if:true={produtos}>
+      <template for:each={produtos} for:item="produto">
+        <lightning-layout-item key={produto.fields.Id.value} size="3" class="slds-var-p-around_x-small">
+          <p>Id: {produto.fields.Id.value}</p>
+          <p>Nome:{produto.fields.Name.value}</p>
+        </lightning-layout-item>
+      </template>
+    </template>
+    <template if:true={produtos.error}>
+      Erro ao buscar produtos.
+    </template>
+  </template>
+  <template if:true={listsViews.error}>
+    Erro ao buscar listViews do objeto Produto.
+  </template>
+</template>

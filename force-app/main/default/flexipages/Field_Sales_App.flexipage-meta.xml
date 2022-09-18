@@ -60,6 +60,12 @@
                 <identifier>flexipage_recentItems</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>bike</componentName>
+                <identifier>c_bike</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>column2</name>
         <type>Region</type>
     </flexiPageRegions>

@@ -40,13 +40,13 @@
         <members>MaintenanceRequestTrigger</members>
         <name>ApexTrigger</name>
     </types>-->
-    <types>
-        <!--<members>helloWorld</members>
+    <!--<types>
+        members>helloWorld</members>
         <members>firstLWC</members>
         <members>bikeCard</members>
         <members>bikeChild</members>
         <members>parentComponent</members>
-        <members>childComponent</members>-->
+        <members>childComponent</members>
         <members>list</members>
         <members>selector</members>
         <members>tile</members>
@@ -54,7 +54,7 @@
         <members>data</members>
         <members>jsExample</members>
         <name>LightningComponentBundle</name>
-    </types>
+    </types>-->
     <!--<types>
         <members>Travel_Approval__c</members>
         <members>Department__c</members>
@@ -82,9 +82,11 @@
         <members>ContactForm</members>
         <name>ApexPage</name>
     </types>-->
-    <!--<types>
+    <types>
         <members>Field_Sales_App</members>
+        <members>Bear_Record_Page</members>
+        <members>Home_Page_Default</members>
         <name>FlexiPage</name>
-    </types>-->
+    </types>
     <version>53.0</version>
 </Package>
