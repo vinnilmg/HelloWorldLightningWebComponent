@@ -60,14 +60,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>helloWebComponent</componentName>
-                <identifier>c_helloWebComponent</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>home:assistant</componentName>
-                <identifier>home_assistant</identifier>
+                <componentName>bearMap</componentName>
+                <identifier>c_bearMap</identifier>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
