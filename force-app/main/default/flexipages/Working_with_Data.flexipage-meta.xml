@@ -3,8 +3,14 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>numerator</componentName>
-                <identifier>c_numerator</identifier>
+                <componentName>contactList</componentName>
+                <identifier>c_contactList</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>accountList</componentName>
+                <identifier>c_accountList</identifier>
             </componentInstance>
         </itemInstances>
         <name>region1</name>
@@ -13,8 +19,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>augmentor</componentName>
-                <identifier>c_augmentor</identifier>
+                <componentName>contactCreator</componentName>
+                <identifier>c_contactCreator</identifier>
             </componentInstance>
         </itemInstances>
         <name>region2</name>
@@ -23,22 +29,16 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>counts</componentName>
-                <identifier>c_counts</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>remoteControl</componentName>
-                <identifier>c_remoteControl</identifier>
+                <componentName>accountCreator</componentName>
+                <identifier>c_accountCreator</identifier>
             </componentInstance>
         </itemInstances>
         <name>region3</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Event Comms</masterLabel>
+    <masterLabel>Working with Data</masterLabel>
     <template>
-        <name>flexipage:appHomeTemplateThreeColumns</name>
+        <name>flexipage:appHomeTemplateHeaderTwoColumnsLeftSidebar</name>
     </template>
     <type>AppPage</type>
 </FlexiPage>
