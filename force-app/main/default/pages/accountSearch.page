@@ -1,0 +1,6 @@
+<apex:page controller="AccountSearchController" docType="html-5.0">
+  <apex:form>
+    <apex:input type="number" label="Number of Employees" value="{!numberOfEmployees}" />
+    <apex:commandButton value="Reset" action="{!reset}" />
+  </apex:form>
+</apex:page>

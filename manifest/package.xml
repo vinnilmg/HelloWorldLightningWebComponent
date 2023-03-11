@@ -83,11 +83,12 @@
         <name>ApexPage</name>
     </types>-->
     <types>
-        <members>Field_Sales_App</members>
+        <!--<members>Field_Sales_App</members>
         <members>Bear_Record_Page</members>
         <members>Home_Page_Default</members>
         <members>Event_Comms</members>
-        <members>Working_with_Data</members>
+        <members>Working_with_Data</members>-->
+        <members>LWC_Visualforce_Devs</members>
         <name>FlexiPage</name>
     </types>
     <version>53.0</version>
